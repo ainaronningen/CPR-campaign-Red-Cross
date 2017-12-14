@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Har du det du trenger?</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:600" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!--   SECTION 1-->
+
+    <div id="section1">
+
+        <video src="img/sykkel.mp4" id="introVideo" width="100%" autoplay></video>
+
+        <img class="monitor" src="img/monitor1.svg">
+
+        <div id="monitor-info">
+            <img class="heart anim" src="img/heart.svg">
+            <div id="heartbeat">89</div>
+            <div id="distance">0</div>
+            <h1 id="clock" class="clocks time">clock</h1>
+        </div>
+
+        <p class="sound-on">Skru på lyd</p>
+
+        <div class="introtext-container">
+            <h1 class="introtext introtext1">Har du det du trenger?</h1>
+            <h1 class="introtext introtext2">Riktig kunnskap</h1>
+            <h1 class="introtext introtext3">er avgjørende</h1>
+            <h1 class="introtext introtext4">for resultatet</h1>
+            <h1 class="introtext introtext5">...når det står om liv</h1>
+            <h1 class="introtext introtext6">Har du<br>kunnskapen<br>du trenger?</h1>
+        </div>
+
+    </div>
+
+
+    <!--   SECTION 2-->
+
+    <div id="section2" class="hidden">
+
+        <img class="bg-img" src="img/hjertestans.jpg">
+        <div class="white-bg"></div>
+        <a href="https://www.rodekors.no" target="_blank">
+            <img class="rc-logo" src="img/NRX_pos_FARGET_bakgrunn2.png"></a>
+        <img class="icn-hands" src="img/icon-hands.svg">
+        <audio id="music" src="music/Stayin-Alive.mp3"></audio>
+
+        <div class="start-cpr">
+            <h1 id="feedback">Start livredning</h1>
+            <p>Øv deg på å finne riktig kompresjonsrytme ved å trykke på ikonet over.<br>Frekvensen skal være ca 100 per minutt, som i Stayin´Alive.</p>
+        </div>
+
+        <div id="info-cpr-container">
+            <div class="step step1">
+                <div class="info info1">
+                    <img src="img/icn_phone.png" class="icn-info icn-info1">
+                    <h4>Ring 113</h4>
+                </div>
+                <p id="call">LES MER</p>
+            </div>
+
+            <div class="step step2">
+                <div class="info info2">
+                    <img src="img/icn-push.png" class="icn-info icn-info2">
+                    <h4>30 brystkompresjoner</h4>
+                </div>
+                <p id="push">LES MER</p>
+            </div>
+
+            <div class="step step3">
+                <div class="info info3">
+                    <img src="img/icn-breathe.png" class="icn-info icn-info3">
+                    <h4>2 innblåsninger</h4>
+                </div>
+                <p id="breathe">LES MER</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--    SECTION 3-->
+
+    <div id="section3" class="section hidden">
+        <a href="https://www.rodekors.no" target="_blank">
+            <img class="rc-logo" src="img/NRX_pos_FARGET_bakgrunn.png"></a>
+
+        <h1 id="perfekt">Du har reddet et liv!</h1>
+        <div class="buttons buttons1">
+            <a href="#" class="go-to-section2">
+                <p id=btn1>Prøv en gang til</p>
+            </a>
+            <a href="https://www.rodekors.no/vart-arbeid/beredskap/forstehjelp/" target="_blank">
+                <p id=btn2>Les mer om HLR</p>
+            </a>
+        </div>
+    </div>
+
+
+    <!--    SECTION 4-->
+
+    <div id="section4" class="section hidden">
+        <a href="https://www.rodekors.no" target="_blank">
+            <img class="rc-logo" src="img/NRX_pos_FARGET_bakgrunn.png"></a>
+
+        <h1 id="wrong">Du trenger mer øvelse</h1>
+
+        <div class="buttons buttons2">
+            <a href="#" class="go-to-section2">
+                <p id=btn3>Prøv en gang til</p>
+            </a>
+            <a href="https://www.rodekors.no/vart-arbeid/beredskap/forstehjelp/" target="_blank">
+                <p id=btn4>Les mer om HLR</p>
+            </a>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/cpr.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+
+
+</body>
+
+</html>

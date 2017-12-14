@@ -1,0 +1,544 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.section h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 7vw;
+    color: #fff;
+    margin: 0 auto;
+    padding-top: 40vh;
+    user-select: none;
+}
+
+
+/************************************
+************  SECTION 1  ************
+*************************************/
+
+#section1 {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    vertical-align: middle;
+    z-index: 1;
+}
+
+#section1.hidden {
+    display: none;
+}
+
+
+#section1 video {
+    width: auto;
+    height: 100%;
+    position: relative;
+}
+
+
+.sound-on {
+    width: 10vw;
+    height: 5vh;
+    padding-top: 1.4vh;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5vw;
+    color: #000;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    top: 33vh;
+    right: 0;
+    animation-name: fadesound;
+    animation-duration: 3.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes fadesound {
+    0% {color: rgba(0, 0, 0, 1)}
+    90% {color: rgba(0, 0, 0, 1)}
+    100% {color: rgba(0, 0, 0, 0)}
+}
+
+
+/*********  BICYCLE MONITOR  *********/
+
+.monitor {
+    width: 140px;
+    position: absolute;
+    top: 60px;
+    right: 80px;
+}
+
+#monitor-info {
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Oswald, sans-serif;
+    letter-spacing: 0.5px;
+    color: #fff;
+    position: absolute;
+    top: 95px;
+    right: 75px;
+}
+
+.heart {
+    width: 530px;
+    height: 30px;
+    color: #fff;
+    opacity: 0.9;
+}
+
+.heart.anim {
+    -webkit-animation: pulse 590ms ease infinite;
+    -moz-animation: pulse 590ms ease infinite;
+    -o-animation: pulse 590ms ease infinite;
+    animation: pulse 590ms ease infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.4);
+    }
+}
+
+#heartbeat {
+    padding-top: 10px;
+    font-size: 40px;
+
+}
+
+#distance {
+    position: absolute;
+    top: 103px;
+    font-size: 30px;
+}
+
+#clock {
+    position: absolute;
+    top: 146px;
+    font-size: 30px;
+}
+
+.introtext-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    animation: fadeinone;
+    animation-duration: 1s;
+    animation-delay: 33s;
+    animation-fill-mode: forwards;
+}
+
+.introtext {
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    font-family: 'PT sans', sans-serif;
+    text-align: center;
+    font-size: 7.5vw;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+    /*  Har du det du trenger?  */
+.introtext1 {
+    position: relative;
+    transition: all 1s ease;
+    animation-name: fadeintwo;
+    animation-duration: 5.5s;
+    animation-delay: 4.5s;
+    animation-fill-mode: both;
+}
+
+    /*  Riktig kunnskap  */
+.introtext2 {
+    position: absolute;
+    top: 340px;
+    margin: 0;
+    line-height: 120px;
+    transition: all 2s ease;
+    animation-name: fadeinthree;
+    animation-duration: 4.5s;
+    animation-delay: 14s;
+    animation-fill-mode: both;
+}
+
+    /*  er avgjørende  */
+.introtext3 {
+    position: absolute;
+    top: 360px;
+    transition: all 2s ease;
+    animation-name: fadeinfour;
+    animation-duration: 5s;
+    animation-delay: 18.5s;
+    animation-fill-mode: both;
+}
+
+    /*  for resultatet  */
+.introtext4 {
+    position: absolute;
+    top: 360px;
+    transition: all 2s ease;
+    animation-name: fadeinfive;
+    animation-duration: 7s;
+    animation-delay: 23.5s;
+    animation-fill-mode: both;
+}
+
+    /*  når det står om liv  */
+.introtext5 {
+    position: absolute;
+    top: 360px;
+    transition: all 2.5s ease;
+    animation-name: fadeinsix;
+    animation-duration: 6s;
+    animation-delay: 36s;
+    animation-fill-mode: both;
+}
+
+    /*  Har du kunnskapen du trenger?  */
+.introtext6 {
+    position: absolute;
+    top: 200px;
+    line-height: 110px;
+    transition: all 2s ease;
+    animation-name: fadeinseven;
+    animation-duration: 2s;
+    animation-delay: 43s;
+    animation-fill-mode: both;
+}
+
+
+@keyframes fadeinone {
+    0% {background-color: rgba(0, 0, 0, 1)}
+    80% {background-color: rgba(0, 0, 0, 0)}
+    100% {background-color: rgba(0, 0, 0, 1)}
+}
+
+@keyframes fadeintwo {
+    0% {color: rgba(255, 255, 255, 0)}
+    10% {color: rgba(255, 255, 255, 1)}
+    90% {color: rgba(255, 255, 255, 1)}
+    100% {color: rgba(255, 255, 255, 0)}
+}
+
+@keyframes fadeinthree {
+    0% {color: rgba(255, 255, 255, 0)}
+    10% {color: rgba(255, 255, 255, 1)}
+    90% {color: rgba(255, 255, 255, 1)}
+    100% {color: rgba(255, 255, 255, 0)}
+}
+
+@keyframes fadeinfour {
+    0% {color: rgba(255, 255, 255, 0)}
+    10% {color: rgba(255, 255, 255, 1)}
+    90% {color: rgba(255, 255, 255, 1)}
+    100% {color: rgba(255, 255, 255, 0)}
+}
+
+@keyframes fadeinfive {
+    0% {color: rgba(255, 255, 255, 0)}
+    10% {color: rgba(255, 255, 255, 1)}
+    90% {color: rgba(255, 255, 255, 0.5)}
+    100% {color: rgba(255, 255, 255, 0)}
+}
+
+@keyframes fadeinsix {
+    0% {color: rgba(227, 0, 11, 0)}
+    30% {color: rgba(227, 0, 11, 1)}
+    70% {color: rgba(227, 0, 11, 1)}
+    100% {color: rgba(227, 0, 11, 0)}
+}
+
+@keyframes fadeinseven {
+    0% {color: rgba(255, 255, 255, 0)}
+    100% {color: rgba(255, 255, 255, 1)}
+}
+
+
+/************************************
+************  SECTION 2  ************
+*************************************/
+
+#section2 {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    transition: all 1s ease;
+}
+
+#section2.hidden {
+    top: 105vh;
+}
+
+.bg-img {
+    width: 100vw;
+    position: relative;
+    top: 0;
+    right: 0;
+    background-position: center;
+}
+
+.rc-logo {
+    width: 12vw;
+    position: absolute;
+    top: 3vw;
+    left: 5vh;
+}
+
+.white-bg {
+    background-color: #fff;
+    width: 100vw;
+    height: 56vh;
+    position: absolute;
+    top: 370px;
+}
+
+
+/* -------  LIFE SAVING ANIMATION  -------  */
+
+.icn-hands {
+    width: 100px;
+    position: absolute;
+    top: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.icn-hands:hover {
+    transform: scale(1.2);
+}
+
+.start-cpr {
+    width: 70vw;
+    font-family: 'PT sans', sans-serif;
+    text-align: center;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 55vh;
+}
+
+.start-cpr h1 {
+    margin-top: 18px;
+    padding-bottom: 2.2vh;
+    color: #e3000b;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    user-select: none;
+    animation-name: pulsing;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes pulsing {
+    from {transform: scale3d(1, 1, 1);}
+    50% {transform: scale3d(1.2, 1.2, 1.2);}
+    to {transform: scale3d(1, 1, 1);}
+}
+
+.start-cpr p {
+    font-size: 1.3vw;
+    line-height: 2.8vh;
+}
+
+
+/* -------  THE THREE LIFESAVING STEPS  -------  */
+
+#info-cpr-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 70vw;
+    height: 35vh;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 75vh;
+}
+
+.step {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 33%;
+    height: 10vh;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -5px;
+}
+
+.icn-info {
+    width: 4vw;
+    margin: 5px;
+}
+
+.info h4 {
+    font-family: 'PT sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    letter-spacing: 0.2px;
+    margin-bottom: 0;
+}
+
+.step p {
+    width: 33vw;
+    padding: 1vw;
+    font-size: 12px;
+    line-height: 2.2vh;
+    text-align: center;
+    color: #555;
+}
+
+
+/************************************
+************  SECTION 3  ************
+*************************************/
+
+#section3 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #e3000b;
+}
+
+#section3.hidden {
+    display: none;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 60vw;
+    margin: 0 auto;
+    padding: 2.5vw;
+}
+
+.buttons1 #btn1,
+.buttons1 #btn2 {
+    background-color: #fff;
+    margin: 3vw;
+    padding: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-size: 1vw;
+    text-decoration: none;
+    border: 2px solid #e3000b;
+    color: #e3000b;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+#btn1:hover,
+#btn2:hover {
+    background-color: #242424;
+    /*    background-color: #e3000b;*/
+    color: #fff;
+    border: 2px solid #fff;
+    transition: all ease 0.5s;
+}
+
+
+/************************************
+************  SECTION 4  ************
+*************************************/
+
+#section4 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #555;
+}
+
+#section4.hidden {
+    display: none;
+}
+
+.buttons2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 60vw;
+    margin: 0 auto;
+    padding: 2.5vw;
+}
+
+.buttons2 #btn3,
+.buttons2 #btn4 {
+    background-color: #e3000b;
+    margin: 3vw;
+    padding: 15px;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-size: 1vw;
+    text-decoration: none;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+#btn3:hover,
+#btn4:hover {
+    background-color: #fff;
+    color: #242424;
+    border: 1px solid #fff;
+    transition: all ease 0.5s;
+}
